@@ -1,0 +1,2 @@
+BASEDIR='/etc/webhook.d'
+

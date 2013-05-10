@@ -1,0 +1,15 @@
+The plan
+=========
+
+A configuration directory similar to /etc/cron.hourly, which should tipically be
+/etc/webhooks.d/. Let's call it basedir
+
+When a request for /hook/<name> is received, $basedir/$name is looked for.
+Then it will run run-parts in that dir.
+
+It will need a way to handle arguments to scripts from http query arguments.
+
+Github support is the primary goal, even if broader compatibility/flexibility is
+welcome.
+
+vim: set tw=80:
